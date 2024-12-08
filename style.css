@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    background: linear-gradient(to right, #87cefa, #000080);
+    color: white;
+    padding: 30px 10px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.motto {
+    font-style: italic;
+}
+
+/* Navigation Bar */
+.navbar {    
+    background-color: #000080;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar a.active, .navbar a:hover {
+    background-color: #87cefa52;
+    border-radius: 15px;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.welcome .btn:hover {
+    background-color: #87cefa;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    text-align: center;
+    background-color: #e6f7ff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Preview Section */
+.gallery-preview {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img, .gallery-images video {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+.about, .history, .values, .facilities {
+    padding: 20px;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .history h2, .values h2, .facilities h2 {
+    color: #000080;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.values ul, .facilities ul {
+    list-style-type: disc;
+    margin: 0 20px;
+    padding: 0;
+}
+
+ /* Staff Section */
+ .staff {
+    padding: 20px;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.staff h2 {
+    color: #000080;
+    margin-bottom: 20px;
+}
+
+.staff-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.staff-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.staff-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+.staff-info h3 {
+    color: #000080;
+    margin-top: 0;
+}
+
+.staff-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+  /* Gallery Section */
+  .gallery {
+    padding: 20px;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #000080;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+}
+
+
+  /* Contact Form Section */
+  .contact-form {
+    padding: 20px;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact-form h2 {
+    color: #000080;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #87cefa;
+}
+
+/* School Location Section */
+.school-location {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.school-location h2 {
+    color: #000080;
+    margin-bottom: 10px;
+}
+
+.school-location p {
+    font-size: 16px;
+}
+
+.school-location iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gallery .btn:hover {
+    background-color: #87cefa;
+}
+footer .footer-links {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+}
